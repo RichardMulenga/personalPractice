@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HCI Interactive Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+<header>
+    <h1>Take a quiz</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+    </nav>
+</header>
+
+<div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+
+
+
+    <!-- Main Quiz Section -->
+    <main class="quiz-wrapper">
+
+        <div class="quiz-card fade-in" id="quiz-container">
+
+            <!-- Header -->
+            <div class="quiz-header">
+                <h1>HCI Interactive Quiz</h1>
+                <p>Test your knowledge of Human-Computer Interaction principles.</p>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+
+            <!-- Timer -->
+            <div class="timer">
+                ⏳ Time Left: <span id="timer">15</span>s
+            </div>
+
+            <!-- Question Area -->
+            <div class="question-section">
+                <h2 id="question">Loading question...</h2>
+                <div id="options" class="options-container"></div>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button id="nextBtn" class="btn-primary">Next</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Audio Elements -->
+    <audio id="correctSound">
+     <source src="assets/correct.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="wrongSound">
+     <source src="assets/wrong.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2026 SmartLearn Pro</p>
+</footer>
+
+</body>
+</html>

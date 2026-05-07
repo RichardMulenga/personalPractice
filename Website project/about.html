@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | SmartLearn Pro</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Navigation -->
+<header>
+    <h1>About</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="about-hero">
+    <h1>About SmartLearn Pro</h1>
+    <p>An Interactive Smart Learning Platform</p>
+</section>
+
+<!-- Main Content -->
+<section class="about-container">
+
+    <!-- Project Overview -->
+    <div class="about-card fade-up">
+        <h2><i class="fa-solid fa-bullseye"></i> Website Overview</h2>
+        <p>
+            SmartLearn Pro is a modern interactive multimedia learning platform designed to enhance
+            user engagement and improve knowledge retention. The system integrates text, video,
+            audio, animations, and interactive quizzes into a unified learning environment.
+        </p>
+        <p>
+            The project demonstrates the practical application of Human-Computer Interaction (HCI)
+            principles to create a user-centered educational experience.
+        </p>
+    </div>
+
+    <!-- Objectives -->
+    <div class="about-card fade-up">
+        <h2><i class="fa-solid fa-list-check"></i> Project Objectives</h2>
+        <ul>
+            <li>Design a responsive, modern educational website</li>
+            <li>Integrate multimedia elements (Text(PDFs included), videos, audio, animations)</li>
+            <li>Implement interactive quizzes with real-time feedback</li>
+            <li>Apply core HCI usability principles</li>
+            <li>Ensure accessibility and responsiveness across devices</li>
+        </ul>
+    </div>
+
+    <!-- HCI Principles -->
+    <div class="about-card fade-up">
+        <h2><i class="fa-solid fa-brain"></i> HCI Principles Applied</h2>
+
+        <h3>1. Consistency</h3>
+        <p>Uniform navigation, consistent layout structures, and predictable interface patterns.</p>
+
+        <h3>2. Feedback</h3>
+        <p>Audio feedback for quiz responses, progress indicators, loading animations, and timers.</p>
+
+        <h3>3. Visibility of System Status</h3>
+        <p>Real-time timer updates, quiz progress bar, and interactive state changes.</p>
+
+        <h3>4. Error Prevention</h3>
+        <p>Input validation before moving to the next question and defensive JavaScript logic.</p>
+
+        <h3>5. User Control</h3>
+        <p>Clear navigation and the ability to move freely between learning sections.</p>
+
+        <h3>6. Accessibility</h3>
+        <p>Readable typography, strong contrast ratios, responsive design, and structured layout.</p>
+    </div>
+
+    <!-- Multimedia Integration -->
+    <div class="about-card fade-up">
+        <h2><i class="fa-solid fa-photo-film"></i> Multimedia Integration</h2>
+        <ul>
+            <li>📚 Embedded and downloadable PDF books</li>
+            <li>🎥 Educational video content</li>
+            <li>🎵 Audio feedback for user interaction</li>
+            <li>🌀 Animated transitions and loading effects</li>
+            <li>📊 Interactive quiz system with scoring</li>
+        </ul>
+    </div>
+
+    <!-- Technologies -->
+    <div class="about-card fade-up">
+        <h2><i class="fa-solid fa-code"></i> Technologies Used</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS (Responsive Design & Animations)</li>
+            <li>JavaScript </li>
+        </ul>
+    </div>
+
+    <!-- Formal Report Section -->
+    <div class="about-card report-section fade-up">
+        <h2><i class="fa-solid fa-file-lines"></i> Formal Project Report Summary</h2>
+
+        <p>
+            This project was developed as part of coursework in Multimedia and Human-Computer
+            Interaction. It demonstrates the practical implementation of user-centered interactive design
+            methodologies through the creation of a fully functional multimedia learning platform aimed at enhancing 
+            information retainability and learning capabilities of users.
+        </p>
+
+        <p>
+            The system architecture follows a modular structure separating content (HTML),
+            presentation (CSS), and behavior (JavaScript), ensuring maintainability and scalability.
+        </p>
+
+        <p>
+            Evaluation of the system shows improved usability through consistent navigation,
+            responsive design, and real-time user feedback mechanisms.
+        </p>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2026 SmartLearn Pro</p>
+</footer>
+
+<!-- Animation Script -->
+<script>
+const cards = document.querySelectorAll(".fade-up");
+
+window.addEventListener("scroll", () => {
+    cards.forEach(card => {
+        const position = card.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+
+        if (position < screenHeight - 100) {
+            card.classList.add("show");
+        }
+    });
+});
+</script>
+
+</body>
+</html>
